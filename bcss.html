@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background: url("index3.jpg");
+    background-size: 1280px 700px;
+    background-repeat: no-repeat;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #8f8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #134;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">css introduction</a>
+  <a href="#">css syntax</a>
+  <a href="#">css colors</a>
+  <a href="#">css background</a>
+  <a href="#">css borders</a>
+  <a href="#">css margins</a>
+  <a href="#">css padding</a>
+  <a href="#">css height/width</a>
+  <a href="#">css box model</a>
+  <a href="#">css outline</a>
+  <a href="#">css text</a>
+  <a href="#">css icons</a>
+  <a href="#">css link</a>
+  <a href="#">css lists</a>
+  <a href="#">css tables</a>
+  <a href="#">css display</a>
+  <a href="#">css max-width</a>
+  <a href="#">css position</a>
+  <a href="#">css Overflow</a>
+  <a href="#">css Inline-block</a>
+  <a href="#">css Align</a>
+  <a href="#">css combinators</a>
+  <a href="#">css Pseudo-class</a>
+  <a href="#">css Pseudo-element</a>
+  <a href="#">css opacity</a>
+  <a href="#">css Navigation Bar</a>
+  <a href="#">css Dropdowns</a>
+  <a href="#">css tooltips</a>
+  <a href="#">css Image Gallery</a>
+  <a href="#">css image sprites</a>
+  <a href="#">css attr selectors</a>
+  <a href="#">css forms</a>
+  <a href="#">css counters</a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+    document.getElementById("main").style.marginLeft= "0px";
+}
+</script>
+     
+</body>
+</html> 
